@@ -31,7 +31,7 @@ ap.add_argument("-p", "--plot", type=str, default="plot.png",
 	help="path to output loss/accuracy plot")
 args = vars(ap.parse_args())
 
-
+#insert your dataset and create the folders corresponding to your classes containing the images
 LABELS = set(["DOCUMENTARI","EVENTI RELIGIOSI","GAMESHOW","TALK_SHOW","TELEVENDITE"])
 print("[INFO] loading images...")
 ListImage = list(paths.list_images('CNN_DATASET'))
